@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="34.63855">
+    <testcase classname="To validate login feature in fb application" name="To validate login with invalid email and invalid password" time="8.007791">
+        <system-out>
+            <![CDATA[When User has to pass invalid email and invalid password to required field..passed
+And User has to click login button..........................................passed
+Then To validate that user has navigate to error page.......................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="To validate login feature in fb application" name="To validate login with valid mobile number and invalid password" time="5.789346">
+        <failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at org.stepdefinition.Scenario2.user_has_to_pass_valid_phone_number_and_invalid_password_to_required_field(Scenario2.java:21)&#13;&#10;&#9;at ✽.User has to pass valid phone number &quot;9787979697&quot; and invalid password &quot;Sink@123&quot; to required field(file:src/test/resources/01FbLoginFunctionality.feature:12)&#13;&#10;">
+            <![CDATA[When User has to pass valid phone number "9787979697" and invalid password "Sink@123" to required field.failed
+And User has to click the login button......................................skipped
+Then User should see the error message "The password that you've entered is incorrect.".skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at org.stepdefinition.Scenario2.user_has_to_pass_valid_phone_number_and_invalid_password_to_required_field(Scenario2.java:21)
+	at ✽.User has to pass valid phone number "9787979697" and invalid password "Sink@123" to required field(file:src/test/resources/01FbLoginFunctionality.feature:12)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="To validate login feature in fb application" name="To validate login with empty fields" time="4.771748">
+        <system-out>
+            <![CDATA[When To pass test datas to email "" and password "" field...................passed
+And To click login button...................................................passed
+Then To verify i should see an error message................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="To validate login feature in fb application" name="To validate login with empty fields 2" time="5.480443">
+        <system-out>
+            <![CDATA[When To pass test datas to email "validemail@example.com" and password "" field.passed
+And To click login button...................................................passed
+Then To verify i should see an error message................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="To validate login feature in fb application" name="To validate login with empty fields 3" time="5.471516">
+        <system-out>
+            <![CDATA[When To pass test datas to email "" and password "validpassword@123" field..passed
+And To click login button...................................................passed
+Then To verify i should see an error message................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="To validate that user can create account in facebook application" name="To create account in fb application" time="5.117706">
+        <system-out>
+            <![CDATA[When To pass name data to required field....................................passed
+And To pass password to required field......................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
